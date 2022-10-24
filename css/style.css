@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: glaho;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: glaho;
+    src: url(../fonts/bpg_glaho_sylfaen.ttf);
+}
+
+body {
+    width: 100%;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.fa-bars-icon {
+    width: 100%;
+    font-size: 24px;
+    text-align: right;
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: end;
+    padding: 50px 210px;
+    margin-bottom: 94px;
+}
+
+nav {
+    width: 594px;
+    height: 70px;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.product {
+    width: 227px;
+    height: 70px;
+    padding: 23px 18px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #C4C4C4;
+    border-radius: 0 35px;
+}
+
+/* .product:hover {
+    color: #FFFFFF;
+    background-color: #79B331;
+} */
+
+.active{
+    color: #FFFFFF;
+    background-color: #79B331;
+}
+
+.market {
+    width: 125px;
+    height: 70px;
+    padding: 23px 18px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #C4C4C4;
+    border-radius: 0 35px;
+}
+
+.market:hover {
+    color: #FFFFFF;
+    background-color: #79B331;
+}
+
+.shop {
+    width: 72px;
+    height: 70px;
+    padding: 23px 18px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #C4C4C4;
+    border-radius: 0 35px;
+}
+
+.shop:hover {
+    color: #FFFFFF;
+    background-color: #79B331;
+}
+
+/* main */
+
+.action {
+    text-align: center;
+    margin-left: 700px;
+    width: 422px;
+    height: 188px;
+    /* background-color: #a03f3f; */
+}
+
+.tri {
+    width: 32px;
+    height: 32px;
+    background-color: #79B331;
+    border-radius: 50%;
+    position: relative;
+    animation: cyrcle 3s infinite;
+}
+
+@keyframes cyrcle {
+    0% {top: 0; left: 0;}
+    25% {top: 0; left: 390px;}
+    50% {top: 156px; left: 390px;}
+    75% {top: 156px; left: 0;}
+    100% {top: 0; left: 0;}
+}
+
+.action-content {
+    width: 340px;
+    height: 100px;
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+
+.sale {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+
+.numbers {
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.leaves {
+    margin: 110px 42px 0 250px;
+    width: 1100px;
+    height: 424px;
+    position: relative;
+}
+
+.stem {
+    margin: 0 auto;
+    position: absolute;
+    top: 72px;
+    left: 51%;
+    width: 2px;
+    height: 350px;
+    background-color: #C4C4C4;
+}
+
+.box-1 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 6.5%;
+    width: 494px;
+    height: 70px;
+}
+
+.box-1 p {
+    width: 420px;
+}
+
+.sheet {
+    width: 70px;
+    height: 70px;
+    border-radius: 0 35px;
+    background-color: #C4C4C4;
+}
+
+.box-2 {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 100px;
+    left: 51%;
+    width: 494px;
+    height: 70px;
+}
+
+.box-2 p {
+    width: 408px;
+}
+
+.sheet-90 {
+    transform: rotate(90deg);
+}
+
+.box-3 {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 0.4%;
+    width: 562px;
+    height: 70px;
+}
+
+.box-3 p {
+    width: 490px;
+}
+
+.box-4 {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 300px;
+    left: 51%;
+    width: 494px;
+    height: 70px;
+}
+
+.box-4 p {
+    width: 414px;
+}
+
+.box-1:hover .sheet, .box-2:hover .sheet-90, .box-3:hover .sheet, .box-4:hover .sheet-90 {
+    background-color: #79B331;
+    cursor: pointer;
+}
+
+.box-1:hover p, .box-2:hover p, .box-3:hover p, .box-4:hover p {
+    color: #79B331;
+    cursor: pointer;
+}
+/* Ipad pro */
+@media only screen and (max-width: 1024px) {
+    body {
+    width: 100%;
+    background-image:url(../img/background-Pro.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+    .header {
+        display: flex;
+        justify-content: end;
+        padding: 50px 210px;
+        margin-bottom: 94px;
+    }
+
+    .action {
+    margin-left: 527px;
+    }
+    
+    .leaves {
+        position: relative;
+        margin: 450px 93px 0 350px;
+        width: 570px;
+        height: 500px;
+    }
+
+    .stem {
+        margin: 0 auto;
+        position: absolute;
+        top: 72px;
+        left: 99%;
+        width: 2px;
+        height: 380px;
+        background-color: #C4C4C4;
+    }
+    
+    .box-1 {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 13%;
+        width: 494px;
+        height: 70px;
+    }
+
+    .box-2 {
+        top: 100px;
+        left: 13%;
+        flex-direction: row-reverse;
+    }
+
+    .box-3 {
+        top: 200px;
+        left: 13%;
+        width: 520px;
+    }
+    
+    .box-3 p {
+        width: 420px;
+    }
+    
+    .sheet-90 {
+        transform: rotate(360deg);
+    }
+    .box-4 {
+        top: 300px;
+        left: 13%;
+        flex-direction: row-reverse;
+    }
+}
+/* 11 pro max */
+@media only screen and (max-width: 414px) {
+    body {
+        padding-top: 21px;
+        width: 100%;
+        background-image:url(../img/backgroundPromax.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .fa-bars-icon {
+        display: block;
+    }
+
+    .header {
+        height: 88px;
+        overflow: hidden;
+        /* display: flex;
+        flex-direction: column; */
+        padding: 0;
+        margin-bottom: 0px;
+    }
+
+    header nav {
+        margin-top: 100px;
+    }
+
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 20px;
+    }
+
+    .product {
+        padding: 14px 138px;
+        font-size: 14px;
+        line-height: 18px;
+        width: 414px;
+        height: 46px;
+    }
+
+    .market {
+        padding: 14px 174px;
+        font-size: 14px;
+        line-height: 18px;
+        width: 414px;
+        height: 46px;
+        border-radius: 0px;
+        background-color: #FAFAFA;
+    }
+
+    .shop{
+        padding: 14px 194px;
+        font-size: 14px;
+        line-height: 18px;
+        width: 414px;
+        height: 46px;
+        border-radius: 0px;
+        background-color: #FAFAFA;
+    }
+
+    .action {
+        margin-left: 20px;
+        width: 370px;
+        height: 170px;
+    }
+
+    @keyframes cyrcle {
+        0% {top: 0; left: 0;}
+        25% {top: 0; left: 338px;}
+        50% {top: 124px; left: 338px;}
+        75% {top: 124px; left: 0;}
+        100% {top: 0; left: 0;}
+    }
+
+    .leaves {
+        /* position: relative; */
+        margin: 88px 10px 0 10px;
+        width: 380px;
+        height: 574px;
+    }
+    
+    .stem {
+        display: none;
+    }
+
+    .box-1 {
+        position: relative;
+        top: 0;
+        left: 10%;
+        width: 327px;
+        height: 127px;
+    }
+
+    .box-1 p {
+        width: 326px;
+    }
+
+    .box-2 {
+        position: relative;
+        top: 100px;
+        left: 10%;
+        /* flex-direction: row-reverse; */
+        width: 327px;
+        height: 127px;
+    }
+
+    .box-2 p {
+        width: 326px;
+    }
+
+    .box-3 {
+        position: relative;
+        top: 200px;
+        left: 10%;
+        width: 327px;
+        height: 127px;
+    }
+    
+    .box-3 p {
+        width: 326px;
+    }
+    
+    /* .sheet-90 {
+        transform: rotate(360deg);
+    } */
+    .box-4 {
+        position: relative;
+        top: 300px;
+        left: 10%;
+        /* flex-direction: row-reverse; */
+        width: 327px;
+        height: 127px;
+    }
+
+    .box-4 p {
+        width: 326px;
+    }
+
+    .sheet {
+        position: absolute;
+        top: -70%;
+        left: 36%;
+    }
+}
